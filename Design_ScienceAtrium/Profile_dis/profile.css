@@ -42,7 +42,7 @@ body {
 .nav-logo p{
   color: #F7F8F1;
   font-family: 'Montserrat Alternates', sans-serif; 
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 600;
   margin-top: 10px;
   margin-left: 30px;
@@ -50,7 +50,7 @@ body {
 .nav-menu ul{
   display: flex;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 28px;
   color: #F7F8F1;
   font-family: 'Montserrat Alternates', sans-serif; 
 }
@@ -69,9 +69,9 @@ body {
   border-bottom: 2px solid #F7F8F1;
 }
 .nav-button .btn{
-  width: 130px;
-  height: 40px;
-  font-size: 16px;
+  width: 145px;
+  height: 45px;
+  font-size: 26px;
   color: #F7F8F1;
   font-weight: 300;
   background: rgba(247, 248, 241, 0.4);
@@ -97,11 +97,10 @@ column {
   height: 800px;
 }
 
-.rec-one {
-  max-width: 650px;
-  min-height: 250px;
-  background-color: #EFC87B;
-  margin-top: 120px;
+.rec-one, .rec-two {
+  max-width: 800px;
+  min-height: 300px;
+  margin-top: 150px;
   margin-left: 30px;
   box-shadow: 0 0 15px 2px rgb(123, 115, 103, 24);
   border-radius: 10px;
@@ -112,28 +111,10 @@ column {
   word-break: break-all;
 }
 
-.rec-one:hover{
+.rec-one:hover, .rec-two:hover{
   transform: scale(1.03);
 }
 
-.rec-two {
-  max-width: 650px;
-  min-height: 250px;
-  background-color: #B0C1B6;
-  margin-top: 50px;
-  margin-left: 30px;
-  box-shadow: 0 0 15px 2px rgb(123, 115, 103, 24);
-  border-radius: 10px;
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-  transform: scale(1);
-  word-break: break-all;
-}
-
-.rec-two:hover{
-  transform: scale(1.03);
-}
 .rec img {
   margin-top: 20px;
   margin-left: 20px;
@@ -142,7 +123,7 @@ column {
 .rec p {
   margin-top: 40px;
   margin-left: 20px;
-  font-size: 30px;
+  font-size: 34px;
 }
 
 .rec span{
@@ -151,7 +132,7 @@ column {
 
 .add-inf p, span {
   margin-top: 60px;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 h1 {
@@ -159,29 +140,29 @@ h1 {
   margin-top: 5px;
   margin-bottom: 5px;
   color: #F7F8F1;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 400;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
 
 .col-two {
-  width: 500px;
-  height: 550px;
-  text-align: center;
-  margin-top: 120px;
+  width: 700px;
+  height: 730px;
+  margin-top: 150px;
   margin-left: auto;
   margin-right: 30px;
+  text-align: center;
   box-shadow: 0 0 15px 2px rgb(123, 115, 103, 24);
   border-radius: 10px;
 }
 
 .catalogblk {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 690px;
+  max-height: 670px;
+  font-size: 24px;
+  overflow-y: scroll;
   display: grid;
   place-items: center;
-  font-size: 18px;
-  overflow-y: scroll;
   white-space: nowrap;
   word-break: break-all;
   color: #F7F8F1;
@@ -189,8 +170,8 @@ h1 {
 }
 
 .blockctlg{
-  width: 250px;
-  height: 300px;
+  width: 350px;
+  height: 400px;
   background-size: cover;
   margin: 30px;
   text-align: center;
@@ -204,8 +185,13 @@ h1 {
   transform: scale(1.03);
 }
 
+.blockctlg img {
+  width: 130px;
+  height: 160px;
+}
+
 .blockctlg p{
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .blockctlg .st {
@@ -234,7 +220,7 @@ h1 {
   color: #F7F8F1;
   width: 100%;
   height: 150px;
-  font-size: 24px;
+  font-size: 30px;
   background-color: #7B7367;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
@@ -256,97 +242,138 @@ h2{
   color: #F7F8F1;
 }
 
-@media (max-width: 1920px) {
+.mailto img {
+  width: 33px;
+  height: 33px;
+}
+
+@media (max-width: 1440px) {
   .nav-logo p {
-    font-size: 56px;
-  }
-
-  .nav-menu li {
-    font-size: 28px;
-  }
-
-  .nav-button .btn{
-    width: 145px;
-    height: 45px;
-    font-size: 22px;  
-  }
-
-  .rec-one {
-    max-width: 800px;
-    min-height: 300px;
-    margin-top: 150px;
-  }
-  
-  .rec-two {
-    max-width: 800px;
-    min-height: 300px;
-    margin-top: 120px;
-  }
- 
-  .rec img {
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-  
-  .rec p {
-    margin-top: 40px;
-    margin-left: 20px;
-    font-size: 34px;
-  }
-  
-  .rec span{
-    margin-left: 10px;
-  }
-  
-  .add-inf p, span {
-    margin-top: 60px;
-    font-size: 28px;
-  }
-  
-  h1 {
-    font-size: 36px;
-    font-weight: 400;
-  }
-  
-  .col-two {
-    width: 700px;
-    height: 730px;
-    margin-top: 150px;
-  }
-  
-  .catalogblk {
-    max-width: 690px;
-    max-height: 670px;
-    font-size: 24px;
-  }
-  
-  .blockctlg{
-    width: 350px;
-    height: 400px;
-  }
-
-  .blockctlg img {
-    width: 130px;
-    height: 160px;
-  }
-  
-  .blockctlg p{
-    margin-top: 25px;
-  }
-  
-  .footer{
-    font-size: 30px;
-  }
-  
-  h2{
-    text-align: center;
-    font-weight: 400;
     font-size: 48px;
   }
 
-  .mailto img {
-    width: 33px;
-    height: 33px;
+  .nav-menu li {
+    font-size: 20px;
+  }
+
+  .nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-size: 20px;  
+  }
+
+  .rec-one {
+    max-width: 650px;
+    min-height: 250px;
+    margin-top: 120px;
+  }
+  
+  .rec-two {
+    max-width: 650px;
+    min-height: 250px;
+    margin-top: 50px;
+  }
+  
+  .rec p {
+    font-size: 30px;
+  }
+  
+  .add-inf p, span {
+    font-size: 26px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  .col-two {
+    width: 500px;
+    height: 550px;
+    margin-top: 120px;
+  }
+  
+  .catalogblk {
+    max-width: 500px;
+    max-height: 500px;
+    font-size: 18px;
+  }
+  
+  .blockctlg{
+    width: 250px;
+    height: 300px;
+  }
+  
+  .blockctlg p{
+    margin-top: 10px;
+  }
+  
+  .footer{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .nav-logo p {
+    font-size: 48px;
+  }
+
+  .nav-menu li {
+    font-size: 20px;
+  }
+
+  .nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-size: 18px;  
+  }
+
+  .rec-one {
+    max-width: 650px;
+    min-height: 250px;
+    margin-top: 120px;
+  }
+  
+  .rec-two {
+    max-width: 650px;
+    min-height: 250px;
+    margin-top: 50px;
+  }
+  
+  .rec p {
+    font-size: 30px;
+  }
+  
+  .add-inf p, span {
+    font-size: 26px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+  
+  .col-two {
+    width: 500px;
+    height: 550px;
+    margin-top: 120px;
+  }
+  
+  .catalogblk {
+    max-width: 500px;
+    max-height: 500px;
+    font-size: 18px;
+  }
+  
+  .blockctlg{
+    width: 250px;
+    height: 300px;
+  }
+  
+  .blockctlg p{
+    margin-top: 10px;
+  }
+  
+  .footer{
+    font-size: 24px;
   }
 }
 
@@ -533,7 +560,7 @@ h2{
     margin-top: 120px;
     margin-left: 20px;
     width: 250px;
-    height: 640px;
+    height: 540px;
     margin-right: 20px;
   }
 
@@ -552,8 +579,8 @@ h2{
   }
 
   .catalogblk {
-    width: 210px;
-    height: 590px;
+    width: 240px;
+    height: 570px;
     overflow-x: hidden;
   }
 
@@ -564,14 +591,15 @@ h2{
 
   .footer {
     margin-top: 210px;
+    font-size: 26px;
   }
 
   h2 {
     font-size: 34px;
   }
 
-  .mailto {
-    font-size: 26px;
+  .mailto img {
+    height: 29px;
+    width: 29px;
   }
-
 }

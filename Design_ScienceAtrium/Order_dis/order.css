@@ -133,10 +133,9 @@ h1, h2, h3 {
 }
 
 .block-order .price {
-  position: absolute;
+  display: block;
   bottom: 0;
-  margin-top: 90%;
-  margin-bottom: 10%;
+  margin-top: 25%;
   /* margin-left: 50%;
   margin-right: 50%; */
 }
@@ -188,7 +187,7 @@ h4{
   .nav-button .btn{
     width: 130px;
     height: 40px;
-    font-size: 16px; 
+    font-size: 20px; 
   }
 
   .order-sect {
@@ -221,8 +220,64 @@ h4{
   
   .block-order .price {
     bottom: 0;
-    margin-top: 80%;
-    margin-bottom: 20%;
+    margin-top: 40%;
+  }
+  
+  .footer{
+    font-size: 24px;
+  }
+  
+  h4{
+    text-align: center;
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .nav-logo p {
+    font-size: 48px;
+  }
+
+  .nav-menu li {
+    font-size: 20px;
+  }
+
+  .nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-size: 16px; 
+  }
+
+  .order-sect {
+    width: 1440px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 5px;
+  }
+  
+  .block-order {
+    width: 360px;
+    height: 700px;
+    margin-left: 30px;
+  }
+  
+  h1, h2, h3 {
+    margin-top: 20px;
+    font-size: 34px;
+  }
+  
+  .block-order p, span {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  
+  .block-order .st-spn {
+    margin-left: 10px;
+  }
+  
+  .block-order .price {
+    margin-top: 60%;
   }
   
   .footer{
@@ -315,9 +370,7 @@ h4{
   }
   
   .block-order .price {
-    bottom: 0;
-    margin-top: 70%;
-    margin-bottom: 30%;
+    margin-top: 45%;
   }
   
   .footer{
@@ -378,10 +431,8 @@ h4{
     margin-left: 10px;
   }
   
-  .block-order .price {
-    bottom: 0;
-    margin-top: 70%;
-    margin-bottom: 30%;
+  .order-sect .price {
+    margin-top: 40px;
   }
   
   .footer{
