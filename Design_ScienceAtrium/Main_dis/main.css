@@ -2,7 +2,6 @@
   display: flex;
   margin: 0 auto; 
 }
-
 h2,
 h3,
 h4,
@@ -14,18 +13,15 @@ h6 {
   margin-left: 50%;
   margin-right: 50%;
 }
-
 h6 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
 * {
   box-sizing: border-box;
 }
-
 body {
   padding: 0;
   overflow-x: hidden;
@@ -35,7 +31,7 @@ body {
   color: #F7F8F1;
   font-family: 'Montserrat Alternates', sans-serif;  
   background-size: 100%;
-  height: 900px;
+  height: 1080px;
   position: relative;
   background-repeat: no-repeat;
   background-image: linear-gradient(
@@ -72,7 +68,6 @@ body {
 .nav-menu ul{
   display: flex;
   margin-top: 10px;
-  /* font-size: 20px; */
   font-size: 28px;
   color: #F7F8F1;
   font-family: 'Montserrat Alternates', sans-serif; 
@@ -120,7 +115,7 @@ body {
 }
 
 .main {
-  height: 1080px;
+  height: 100%;
 }
 
 .work, .stages-of-work, .catalog, .guarantees {
@@ -134,37 +129,33 @@ body {
   color: #F7F8F1;
   text-shadow: 5px 0px 14px #EFC87B;
 }
-
 .left{
   float: left;
-  margin-top: 160px;
+  margin-top: 300px;
 }
-
 .right{
   float: right;
   margin-top: -250px;
 }
-
 .img-main{
   position: absolute;
   display: flex;
   float: left;
 }
-
 .keyboard{
   transform: rotate(-40deg);
-  margin-top: 200px;
+  margin-top: 240px;
   margin-left: 300px;
 }
-
 .mouse{
   transform: rotate(20deg);
-  margin-top: 100px;
+  margin-top: 300px;
   margin-left: 280px;
 }
-
 .img-title-page{
   position: absolute;
+  width: 600px;
+  height: 800px;
   margin-top: 140px;
   display: flex;
   top: 45%;
@@ -181,70 +172,59 @@ body {
   font-size: 26px;
   background-color: #F7F8F1;
 }
-
 h2{
   text-align: center;
   margin-left: 50%;
   margin-right: 50%;
-  margin-top: -120px;
+  margin-top: 30px;
   margin-bottom: 0;
   font-weight: 400;
   color: #7B7367;
   white-space: nowrap;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-
 .fan-title {
   position: absolute;
   left: 0;
 }
-
 .fan-title img {
   width: 500px;
   height: 680px;
 }
-
 .title-one {
   transform: rotate(150deg);
   position: absolute;
   margin-top: 320px;
   margin-left: -50px;
 }
-
 .title-two {
   transform: rotate(120deg);
   position: absolute;
   margin-top: 220px;
   margin-left: 50px;
 }
-
 .title-three {
   transform: rotate(90deg);
   position: absolute;
-  /* margin-left: 100px;
-  margin-top: 90px; */
   margin-top: 90px;
   margin-left: 100px;
 }
-
 .title-four {
   transform: rotate(60deg);
   position: absolute;
-  margin-top: -120px;
+  margin-top: 5px;
   margin-left: 50px;
 }
-
 .title-five{
   transform: rotate(30deg);
   position: absolute;
   margin-left: -50px;
-  margin-top: -200px;
+  margin-top: -10px;
 }
-
 .blok-work{
   margin-left: auto;
   margin-right: 30px;
-  margin-top: -220px;
+  margin-top: -20px;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -252,17 +232,14 @@ h2{
   color: #F7F8F1;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-
 .blok-work img{
   width: 100px;
   height: 100px;
   margin-top: 60px;
 }
-
 .blok-work p{
   margin-top: 40px;
 }
-
 .lab{
   width: 500px;
   height: 600px;
@@ -273,7 +250,6 @@ h2{
   text-align: center;
   flex-direction: column;
 }
-
 .diploma{
   width: 500px;
   height: 600px;
@@ -289,6 +265,7 @@ h2{
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  height: 650px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -309,7 +286,6 @@ h2{
   hsl(69deg 33% 96%) 100%
 );
 }
-
 h3{
   text-align: center;
   margin-left: 50%;
@@ -320,7 +296,6 @@ h3{
   white-space: nowrap;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-
 .blocks-stages{
   display: flex;
   justify-content: center;
@@ -329,28 +304,23 @@ h3{
   font-size: 24px;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-
 .stgblock{
   width: 350px;
   height: 400px;
   background-color: #C9C0B3;
-  margin: -330px 20px 30px 30px;
+  margin: -20px 20px 30px 30px;
   text-align: center;
-
   font-size: 34px;
-
   flex-direction: column;
   border-radius: 10px;
   color: #F7F8F1;
   box-shadow: 0 0 15px 1px rgb(123, 115, 103, 24);
 }
-
 .blocks-stages img{
   margin-top: 30px;
   width: 100px;
   height: 100px;
 }
-
 .blocks-stages p{
   margin-top: 40px;
 }
@@ -363,8 +333,8 @@ h3{
   flex-wrap: wrap;
   font-size: 26px;
   background-color: #F7F8F1;
+  height: 700px;
 }
-
 h4{
   text-align: center;
   margin-top: 30px;
@@ -375,40 +345,6 @@ h4{
   white-space: nowrap;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-
-/* .sublist {
-  float: left;
-  margin-left: 30px;
-  margin-right: auto;
-  margin-top: -130px;
-  font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.sublist label {
-  color: #7B7367;
-  font-size: 36px;
-}
-
-.sublist option {
-  color: #7B7367;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 24px;
-  margin-top: 5px;
-}
-
-.sublist select {
-  width: 600px;
-  height: 50px;
-  font-size: 22px;
-  background-color: #C9C0B3;
-  border: none;
-  border-radius: 10px;
-  margin-left: 10px;
-  padding-left: 10px;
-  color: #F7F8F1;
-  box-shadow: 0 0 15px 1px rgb(123, 115, 103, 24);
-} */
-
 .blocks-catalog{
   font-size: 18px;
   overflow-y: hidden;
@@ -417,17 +353,16 @@ h4{
   word-break: break-all;
   color: #F7F8F1;
   font-family: 'Montserrat Alternates', sans-serif; 
-  margin-top: -200px; 
+  margin-top: -20px; 
   margin-left: 20px; 
   margin-right: 20px; 
 }
-
 .ctlblock{
   width: 350px;
   height: 400px;
   background-size: cover;
   display: inline-block;
-  margin: 30px 20px 30px 0;
+  margin: 50px 20px 30px 0;
   text-align: center;
   font-size: 24px;
   margin-left: 20px;
@@ -437,20 +372,18 @@ h4{
   box-shadow: 0 0 15px 1px rgb(123, 115, 103, 24);
   transform: scale(1);
 }
-
 .ctlblock img {
-  width: 100px;
-  height: 125px;
+  width: 150px;
+  height: 180px;
+  z-index: 1000000;
+  margin-top: -40px;
 }
-
 .ctlblock:hover{
   transform: scale(1.03);
 }
-
 .blocks-catalog p{
   margin-top: 15px;
 }
-
 .blocks-catalog button{
   width: 150px;
   height: 50px;
@@ -463,22 +396,18 @@ h4{
   cursor: pointer;
   color: #7B7367;
 }
-
 .btn-shop:hover {
   background-color: rgba(183, 181, 181, 0.44);
   color: #F7F8F1;
   box-shadow: 1px 5px 7px 1px rgba(123, 115, 103, 0.59);
 }
-
 .blocks-catalog::-webkit-scrollbar {
   width: 12px;
 }
-
 .blocks-catalog::-webkit-scrollbar-track {
   background: #C9C0B3;
   border-radius: 10px;
 }
-
 .blocks-catalog::-webkit-scrollbar-thumb {
   background-color: #A89B89;    
   border-radius: 10px;      
@@ -523,7 +452,6 @@ h4{
   hsl(69deg 33% 96%) 100%
 );
 }
-
 h5{
   text-align: center;
   margin-left: 50%;
@@ -534,7 +462,6 @@ h5{
   white-space: nowrap;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-
 .fan-file{
   width: 450px;
   height: 600px;
@@ -542,21 +469,18 @@ h5{
   right: 0;
   z-index: 1500;
 }
-
 .file-one{
   transform: rotate(-59deg);
   position: absolute;
   margin-left: 80px;
   margin-top: 300px;
 }
-
 .file-two{
   transform: rotate(-40deg);
   position: absolute;
   margin-left: 80px;
   margin-top: 200px;
 }
-
 .file-three{
   transform: rotate(-45deg);
   position: absolute;
@@ -570,7 +494,6 @@ h5{
   margin-left: 80px;
   margin-top: 30px;
 }
-
 .block-guarantees{
   margin-left: 40px;
   margin-right: auto;
@@ -583,15 +506,12 @@ h5{
   font-family: 'Montserrat Alternates', sans-serif;
   margin-bottom: 40px;
 }
-
 .block-guarantees img{
   margin-top: 60px;
 }
-
 .block-guarantees p{
   margin-top: 40px;
 }
-
 .calblock{
   width: 500px;
   height: 600px;
@@ -602,7 +522,6 @@ h5{
   text-align: center;
   flex-direction: column;
 }
-
 .warblock{
   width: 500px;
   height: 600px;
@@ -613,20 +532,16 @@ h5{
   text-align: center;
   flex-direction: column;
 }
-
 .block-guarantees img {
   width: 110px;
   height: 110px;
 }
-
 .button-collection button {
   font-size: 30px;
 }
-
 .button-collection {
   margin-top: 30px;
 }
-
 .button-collection img {
   width: 40px;
   height: 40px;
@@ -642,7 +557,6 @@ h5{
   background-color: #7B7367;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-
 h6{
   font-weight: 400;
   margin-left: 50%;
@@ -655,13 +569,11 @@ h6{
   align-items: center;
   text-align: center;
 }
-
 .button-collection{
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
 }
-
 .but-check-in{
   display: flex;
   justify-content: center;
@@ -673,7 +585,6 @@ h6{
   border-radius: 10px;
   cursor: pointer;
 }
-
 .but-check-out{
   display: flex;
   justify-content: center;
@@ -685,7 +596,6 @@ h6{
   border-radius: 10px;
   cursor: pointer;
 }
-
 .mailto{
   display: flex;
   justify-content: center;
@@ -694,481 +604,384 @@ h6{
   color: #F7F8F1;
   font-size: 30px;
 }
-
 .mailto img{
   width: 40px;
   height: 40px;
 }
 
-@media (max-width: 1440px) {
+/* all and (min-width: 640px) and (max-width: 734px) */
+
+@media only screen and (max-width: 1800px) {
   .nav-logo p {
     font-size: 42px;
   }
-
   .nav-menu li {
     font-size: 17px;
   }
-
   .nav-button .btn{
-    width: 120px;
+    width: 130px;
     height: 40px;
     font-size: 20px;  
   }
-
   body {
     overflow-x: hidden;
   }
-
-  .main, .guarantees {
+  .main {
+    height: 1080px;
+  }
+  .guarantees {
     height: 900px;
   }
-
-  .work, .stages-of-work, .catalog {
-    height: 750px;
+  .work {
+    height: 700px;
   }
-
+  .stages-of-work, .catalog {
+    height: 550px;
+  }
   .mouse {
-    margin-left: 200px;
+    margin-left: 180px;
     margin-top: 200px;
   }
-
   .keyboard {
     margin-top: 250px;
     margin-left: 150px;
   }
-
   .img-title-page img {
-    margin-top: 30px;
+    width: 500px;
+    height: 700px;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
   h2, h3, h4, h5, h6 {
     font-size: 48px;
     margin-left: 50%;
     margin-right: 50%;
   }
-
   h2 {
     margin-top: 30px;
   }
-
   .fan-title img{
     width: 330px;
     height: 510px;
   }
-
   .title-one{
     margin-left: -100px;
     margin-top: 270px;
   }
-  
   .title-two{
     margin-left: 10px;
     margin-top: 220px;
   }
-  
   .title-three{
     margin-left: 30px;
     margin-top: 90px;
   }
-  
   .title-four{
     margin-left: 10px;
     margin-top: 10px;
   }
-  
   .title-five{
     margin-left: -100px;
     margin-top: -30px;
   }
-
   .blok-work {
     margin-left: auto;
     margin-right: 20px;
     margin-top: -70px;
     font-size: 22px;
   }
-
   .blok-work img{
     width: 70px;
     height: 70px;
     margin-top: 40px;
   }
-  
   .blok-work p{
     margin-top: 40px;
   }
-  
   .lab, .diploma{
     width: 350px;
     height: 450px;
   }
-
   .blocks-stages {
     margin-top: -130px;
   }
-
   .stages-of-work {
     margin-top: 30px;
   }
-
   h3 {
     margin-top: 30px;
   }
-
   .stgblock {
     width: 250px;
     height: 300px;
     font-size: 23px;
   }
-
   .stgblock img {
     width: 70px;
     height: 70px;
   }
-
-  /* .sublist {
-    margin-top: -100px;
-  }
-  
-  .sublist label {
-    color: #7B7367;
-    font-size: 30px;
-  }
-  
-  .sublist select {
-    width: 400px;
-    height: 45px;
-    font-size: 16px;
-  } */
-
   .blocks-catalog {
     margin-top: -180px;
   }
-
   .ctlblock{
     width: 250px;
     height: 300px;
-    margin: 20px 20px 20px 0;
+    margin: 200px 20px 20px 0;
     font-size: 18px;
   }
-
   .ctlblock img {
     width: 90px;
     height: 115px;
   }
-
   .ctlblock button {
     margin-top: 20px;
     width: 100px;
     height: 30px;
     font-size: 14px;
   }
-
   .fan-file{
     width: 330px;
     height: 510px;
   }
-  
   .file-one{
     margin-left: 70px;
     margin-top: 300px;
   }
-  
   .file-two{
     margin-left: 70px;
     margin-top: 200px;
   }
-  
   .file-three{
     margin-left: 90px;
     margin-top: 100px;
   }
-  
   .file-four{
     margin-left: 150px;
     margin-top: 30px;
   }
-  
   .block-guarantees{
     margin-top: -30px;
     margin-left: 30px;
     margin-right: auto;
     font-size: 22px;
   }
-
   .calblock, .warblock {
     width: 350px;
     height: 450px;
   }
-
   .block-guarantees img {
     width: 70px;
     height: 70px;
     margin-top: 40px;
   }
-
   .button-collection button{
     font-size: 30px;
   }
-
   .button-collection {
     margin-top: 30px;
   }
-
   .button-collection img {
     width: 40px;
     height: 40px;
   }
-
   .footer {
     height: 200px;
   }
-
   .mailto {
     font-size: 30px;
   }
-
   .mailto img{
     width: 40px;
     height: 40px;
   }
 }
 
-@media (max-width: 1280px) {
+@media only screen and (max-width: 1400px) {
   .nav-logo p {
     font-size: 42px;
   }
-
   .nav-menu li {
     font-size: 17px;
   }
-
   .nav-button .btn{
     width: 120px;
     height: 40px;
     font-size: 18px;  
   }
-
   body {
     overflow-x: hidden;
   }
-
-  .main, .guarantees {
+  .main {
+    height: 100%;
+  }
+  .guarantees {
     height: 900px;
   }
-
-  .work, .stages-of-work, .catalog {
+  .work {
     height: 750px;
   }
-
+  .stages-of-work, .catalog {
+    height: 550px;
+  }
   .mouse {
-    margin-left: 200px;
+    margin-left: 190px;
     margin-top: 200px;
   }
-
   .keyboard {
     margin-top: 250px;
-    margin-left: 150px;
+    margin-left: 90px;
   }
-
   .img-title-page img {
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
   h2, h3, h4, h5, h6 {
     font-size: 48px;
     margin-left: 50%;
     margin-right: 50%;
   }
-
   h2 {
     margin-top: 30px;
   }
-
   .fan-title img{
     width: 330px;
     height: 510px;
   }
-
   .title-one{
     margin-left: -100px;
     margin-top: 270px;
   }
-  
   .title-two{
     margin-left: 10px;
     margin-top: 220px;
   }
-  
   .title-three{
     margin-left: 30px;
     margin-top: 90px;
   }
-  
   .title-four{
     margin-left: 10px;
     margin-top: 10px;
   }
-  
   .title-five{
     margin-left: -100px;
     margin-top: -30px;
   }
-
   .blok-work {
     margin-left: auto;
     margin-right: 20px;
     margin-top: -70px;
     font-size: 22px;
   }
-
   .blok-work img{
     width: 70px;
     height: 70px;
     margin-top: 40px;
   }
-  
   .blok-work p{
     margin-top: 40px;
   }
-  
   .lab, .diploma{
     width: 350px;
     height: 450px;
   }
-
   .blocks-stages {
     margin-top: -130px;
   }
-
   .stages-of-work {
     margin-top: 30px;
   }
-
   h3 {
     margin-top: 30px;
   }
-
   .stgblock {
     width: 250px;
     height: 300px;
     font-size: 23px;
   }
-
   .stgblock img {
     width: 70px;
     height: 70px;
   }
-
-  /* .sublist {
-    margin-top: -100px;
-  }
-  
-  .sublist label {
-    color: #7B7367;
-    font-size: 30px;
-  }
-  
-  .sublist select {
-    width: 400px;
-    height: 45px;
-    font-size: 16px;
-  } */
-
   .blocks-catalog {
     margin-top: -180px;
   }
-
   .ctlblock{
     width: 250px;
     height: 300px;
-    margin: 20px 20px 20px 0;
+    margin: 200px 20px 20px 0;
     font-size: 18px;
   }
-
   .ctlblock img {
     width: 90px;
     height: 115px;
   }
-
   .ctlblock button {
     margin-top: 20px;
     width: 100px;
     height: 30px;
     font-size: 14px;
   }
-
   .fan-file{
     width: 330px;
     height: 510px;
   }
-  
   .file-one{
     margin-left: 70px;
     margin-top: 300px;
   }
-  
   .file-two{
     margin-left: 70px;
     margin-top: 200px;
   }
-  
   .file-three{
     margin-left: 90px;
     margin-top: 100px;
   }
-  
   .file-four{
     margin-left: 150px;
     margin-top: 30px;
   }
-  
   .block-guarantees{
     margin-top: -30px;
     margin-left: 30px;
     margin-right: auto;
     font-size: 22px;
   }
-
   .calblock, .warblock {
     width: 350px;
     height: 450px;
   }
-
   .block-guarantees img {
     width: 70px;
     height: 70px;
     margin-top: 40px;
   }
-
   .button-collection button{
     font-size: 30px;
   }
-
   .button-collection {
     margin-top: 30px;
   }
-
   .button-collection img {
     width: 40px;
     height: 40px;
   }
-
   .footer {
     height: 200px;
   }
-
   .mailto {
     font-size: 30px;
   }
-
   .mailto img{
     width: 40px;
     height: 40px;
   }
 }
 
-@media(max-width: 992px) {
+@media only screen and (max-width: 1260px) {
   .nav-button{
     display: none;
   }
@@ -1177,7 +990,7 @@ h6{
   }
   .nav-menu{
     position: absolute;
-    top: -870px;
+    top: -1500px;
     display: flex;
     justify-content: center;
     background: rgba(145, 171, 162, 0.83);
@@ -1207,134 +1020,113 @@ h6{
   .nav-menu-btn i:hover{
     background: rgba(145, 171, 162, 0.83);
   }
-
   .nav-logo p {
     margin-left: -10px;
   }
-
   body {
     overflow-x: hidden;
   }
-
   .guarantees {
     height: 750px;
   }
-
-  .work, .stages-of-work, .catalog {
-    height: 530px;
+  .stages-of-work {
+    height: 400px;
   }
-
+  .work {
+    height: 500px;
+  }
+  .catalog {
+    height: 450px;
+  }
   .text-main{
     font-size: 150px;
   }
-
   .right {
     margin-top: -130px;
   }
-  
   .left {
     margin-top: 260px;
   }
-
   .mouse {
     margin-left: 30px;
     margin-top: 210px;
   }
-
   .keyboard {
     margin-left: 50px;
   }
-
   .img-title-page img {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -30px;
     width: 450px;
     height: 620px;
   }
-
   h2, h3, h4, h5, h6 {
     font-size: 40px;
   }
-
   h2 {
     margin-left: 50%;
     margin-right: 50%;
     margin-top: 30px;
   }
-
   .blok-work {
     font-size: 20px;
     margin-top: -30px;
     font-size: 18px;
   }
-
   .blok-work p {
     margin-top: 20px;
   }
-
   .blok-work img{
     width: 60px;
     height: 60px;
     margin-top: 30px;
   }
-
   .fan-title img {
     width: 230px;
     height: 320px;
   }
-
   .title-one{
     margin-top: 250px;
     margin-left: -90px;
   }
-  
   .title-two{
     margin-left: -10px;
     margin-top: 190px;
   }
-  
   .title-three{
     margin-left: 30px;
     margin-top: 90px;
-  
   }
-  
   .title-four{
     margin-left: -10px;
     margin-top: 30px;
-  
   }
-  
   .title-five{
     margin-left: -80px;
     margin-top: -10px;
   }
-
   .lab, .diploma {
     width: 280px;
     height: 350px;
     margin-left: 10px;
   }
-
   .stgblock {
     width: 200px;
     height: 250px;
-    margin: 20px;
+    margin: -120px 20px 20px 0;
     font-size: 20px;
   }
-
   .blocks-stages {
-    margin-bottom: 50px;
+    margin-top: 30px;
   }
-
   .stgblock img {
     width: 60px;
     height: 60px;
   }
-
   h4 {
     margin-top: 20px;
   }
-
   .ctlblock {
     width: 200px;
     height: 250px;
@@ -1342,279 +1134,200 @@ h6{
     font-size: 14px;
     margin-top: 240px;
   }
-
   .blocks-catalog button {
     width: 70px;
     height: 30px;
     font-size: 12px;
     margin-top: 10px;
   }
-
   .blocks-catalog img {
     width: 70px;
     height: 90px;
   }
-
   .blocks-catalog p{
     margin-top: 10px;
   }
-
-  /* .sublist {
-    margin-top: 20px;
-    z-index: 2000;
-  }
-  
-  .sublist label {
-    color: #7B7367;
-    font-size: 24px;
-  }
-  
-  .sublist select {
-    width: 400px;
-    height: 35px;
-    font-size: 16px;
-  } */
-
   h5 {
     margin-top: 20px;
   }
-
   .fan-file img {
     width: 260px;
     height: 350px;
   }
-
   .guarantees {
     height: 600px;
   }
-
   .block-guarantees {
     font-size: 18px;
     margin-top: -80px;
   }
-
   .calblock {
     width: 300px;
     height: 350px;
   }
-
   .warblock {
     width: 300px;
     height: 350px;
   }
-
   .block-guarantees img{
     margin-top: 20px;
     width: 60px;
     height: 60px;
   }
-  
   .block-guarantees p{
     margin-top: 20px;
   }
-
   .file-one{
     margin-top: 260px;
     margin-left: 160px;
   }
-  
   .file-two{
     margin-top: 160px;
     margin-left: 160px;
   }
-  
   .file-three{
     margin-top: 60px;
     margin-left: 190px;
   }
-  
   .file-four{
     margin-top: 5px;
     margin-left: 270px;
   }
-
   .footer {
     font-size: 26px;
   }
-
   .mailto img{
     width: 30px;
     height: 30px;
   }
-  
 }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 980px) {
+  .main {
+    height: 100%;
+  }
   .work, .stages-of-work {
     height: 600px;
   }
-
   .catalog {
     height: 400px;
   }
-
   body { 
     overflow-x: hidden;
+    width: 100%;
   }
-
   .text-main {
     font-size: 130px;
+    text-overflow: clip;
   }
-
   .right {
     margin-top: -100px;
   }
-  
   .left {
     margin-top: 210px;
   }
-
   .mouse {
-    margin-left: 10px;
+    margin-left: 200px;
   }
-
   .keyboard {
-    margin-top: 210px;
-    margin-left: -40px;
-  }
-
-  .img-main .keyboard {
+    margin-top: 470px;
+    margin-left: -100px;
     width: 450px;
   }
-
   h2 {
     font-size: 34px;
     margin-top: 30px;
     text-align: center;
     white-space: normal;
   }
-
   .blok-work {
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: -200px;
     display: inline-block;
   }
-
   .blok-work p {
     margin-top: 5px;
   }
-
   .blok-work img{
     width: 50px;
     height: 50px;
     margin-top: 20px;
   }
-
   .fan-title img {
     width: 220px;
     height: 300px;
   }
-
   .lab {
-    width: 250px;
+    width: 230px;
     height: 200px;
-    margin-right: -20px;
+    margin-right: 70px;
   }
-
   .diploma {
-    width: 250px;
+    position: absolute;
+    width: 230px;
     height: 200px;
     margin-top: 20px;
     margin-right: 5px;
     margin-left: 10px;
   }
-
   .title-one{
     margin-top: 340px;
     margin-left: -100px;
   }
-  
   .title-two{
     margin-left: -40px;
     margin-top: 260px;
   }
-  
   .title-three{
     margin-left: -5px;
     margin-top: 170px;
-  
   }
-  
   .title-four{
     margin-left: -40px;
     margin-top: 45px;
-  
   }
-  
   .title-five{
     margin-left: -100px;
     margin-top: -10px;
   }
-
   h3 {
     font-size: 34px;
   }
-
   .blocks-stages {
     margin-top: 20px;
   }
-
   .stgblock {
     width: 200px;
     height: 200px;
     margin-top: 20px;
   }
-
   .stgblock img {
     width: 50px;
     height: 50px;
     margin-top: 20px;
   }
-
   .stgblock p {
     margin-top: 10px;
   }
-
   h4 {
     font-size: 34px;
     margin-top: 20px;
   }
-
   .blocks-catalog {
     margin-top: -10px;
   }
-
   .ctlblock {
     width: 200px;
     height: 250px;
     margin: 20px;
     font-size: 14px;
   }
-
   .blocks-catalog button {
     margin-top: 10px;
   }
-
   .blocks-catalog p{
     margin-top: 10px;
   }
-
-  /* .sublist {
-    margin-top: 20px;
-    z-index: 2000;
-  }
-  
-  .sublist label {
-    color: #7B7367;
-    font-size: 18px;
-  }
-  
-  .sublist select {
-    width: 230px;
-    height: 35px;
-    font-size: 16px;
-  } */
-
   h5 {
     font-size: 34px;
     margin-top: 20px;
@@ -1622,78 +1335,53 @@ h6{
     margin-left: 20px;
     text-align: left;
   }
-
   .fan-file img {
     width: 300px;
     height: 400px;
   }
-
   .guarantees {
     height: 750px;
   }
-
   .block-guarantees {
     font-size: 16px;
     margin-top: -180px;
     display: inline-block;
   }
-
   .calblock {
     width: 250px;
     height: 250px;
     margin-top: 200px;
   }
-
   .warblock {
     width: 250px;
     height: 250px;
     margin-top: 30px;
-    margin-left: 5px;
+    margin-left: -5px;
   }
-
   .block-guarantees img{
     margin-top: 10px;
     width: 70px;
     height: 70px;
   }
-  
   .block-guarantees p{
     margin-top: 10px;
   }
-
   .file-one{
     margin-top: 300px;
   }
-  
   .file-two{
     margin-top: 200px;
   }
-  
   .file-three{
     margin-top: 100px;
   }
-
   .button-collection {
     font-size: 24px;
   }
-
   .mailto {
     font-size: 24px;
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .fixed{
