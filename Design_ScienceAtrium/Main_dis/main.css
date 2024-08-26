@@ -1,23 +1,12 @@
 .container {
-  display: flex;
   margin: 0 auto; 
 }
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   padding: 0;
   margin: 0;
   font-size: 60px;
-  margin-left: 50%;
-  margin-right: 50%;
-}
-h6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-weight: 400;
 }
 * {
   box-sizing: border-box;
@@ -44,7 +33,7 @@ body {
 );
 }
 
-.nav{
+.nav {
   position: fixed;
   top: 0;
   display: flex;
@@ -57,7 +46,7 @@ body {
   background-repeat: no-repeat;
   z-index: 50000;
 }
-.nav-logo p{
+.nav-logo p {
   color: #F7F8F1;
   font-family: 'Montserrat Alternates', sans-serif; 
   font-size: 56px;
@@ -65,17 +54,17 @@ body {
   margin-top: 10px;
   margin-left: 30px;
 }
-.nav-menu ul{
+.nav-menu ul {
   display: flex;
   margin-top: 10px;
   font-size: 28px;
   color: #F7F8F1;
   font-family: 'Montserrat Alternates', sans-serif; 
 }
-.nav-menu ul li{
+.nav-menu ul li {
   list-style-type: none;
 }
-.nav-menu ul li .link{
+.nav-menu ul li .link {
   text-decoration: none;
   font-weight: 500;
   color: #F7F8F1;
@@ -83,10 +72,10 @@ body {
   padding-bottom: 15px;
   margin: 0 25px;
 }
-.link:hover, .active{
+.link:hover, .active {
   border-bottom: 2px solid #F7F8F1;
 }
-.nav-button .btn{
+.nav-button .btn {
   width: 155px;
   height: 45px;
   font-size: 24px;
@@ -98,65 +87,67 @@ body {
   cursor: pointer;
   transition: .3s ease;
 }
-.btn:hover{
+.btn:hover {
   background: rgba(247, 248, 241, 0.3);
 }
-#registerBtn{
+#registerBtn {
   margin-left: 15px;
 }
-.btn.white-btn{
+.btn.white-btn {
   background: rgba(247, 248, 241, 0.7);
 }
-.btn.btn.white-btn:hover{
+.btn.btn.white-btn:hover {
   background: rgbargba(247, 248, 241, 0.5);
 }
-.nav-menu-btn{
+.nav-menu-btn {
   display: none;
 }
 
-.main {
-  height: 100%;
+.main-window {
+  height: 1090px;
+  display: flex;
+  flex-direction: column;
 }
 
 .work, .stages-of-work, .catalog, .guarantees {
   height: 900px;
 }
 
-.text-main{
+.main-window-text {
   font-size: 200px;
   font-weight: 700;
   position: relative;
   color: #F7F8F1;
   text-shadow: 5px 0px 14px #EFC87B;
 }
-.left{
+.left {
   float: left;
   margin-top: 300px;
 }
-.right{
+.right {
   float: right;
   margin-top: -250px;
 }
-.img-main{
+.main-window-img {
   position: absolute;
   display: flex;
   float: left;
 }
-.keyboard{
+.keyboard {
   transform: rotate(-40deg);
   margin-top: 240px;
   margin-left: 300px;
 }
-.mouse{
+.mouse {
   transform: rotate(20deg);
   margin-top: 300px;
   margin-left: 280px;
 }
-.img-title-page{
+.main-window-title {
   position: absolute;
   width: 600px;
   height: 800px;
-  margin-top: 140px;
+  margin-top: 100px;
   display: flex;
   top: 45%;
   left: 50%;
@@ -172,22 +163,21 @@ body {
   font-size: 26px;
   background-color: #F7F8F1;
 }
-h2{
+.work-text {
   text-align: center;
   margin-left: 50%;
   margin-right: 50%;
   margin-top: 30px;
   margin-bottom: 0;
-  font-weight: 400;
   color: #7B7367;
   white-space: nowrap;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-.fan-title {
+.work-fan-title {
   position: absolute;
   left: 0;
 }
-.fan-title img {
+.work-fan-title img {
   width: 500px;
   height: 680px;
 }
@@ -215,16 +205,16 @@ h2{
   margin-top: 5px;
   margin-left: 50px;
 }
-.title-five{
+.title-five {
   transform: rotate(30deg);
   position: absolute;
   margin-left: -50px;
   margin-top: -10px;
 }
-.blok-work{
+.work-block {
   margin-left: auto;
   margin-right: 30px;
-  margin-top: -20px;
+  margin-top: 20px;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -232,15 +222,15 @@ h2{
   color: #F7F8F1;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-.blok-work img{
+.work-block img {
   width: 100px;
   height: 100px;
   margin-top: 60px;
 }
-.blok-work p{
+.work-block p {
   margin-top: 40px;
 }
-.lab{
+.work-block-lab {
   width: 500px;
   height: 600px;
   background-color: #EFC87B;
@@ -250,7 +240,7 @@ h2{
   text-align: center;
   flex-direction: column;
 }
-.diploma{
+.work-block-diploma {
   width: 500px;
   height: 600px;
   background-color: #91ABA2;
@@ -261,7 +251,7 @@ h2{
   flex-direction: column;
 }
 
-.stages-of-work{
+.stages-of-work {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -286,17 +276,16 @@ h2{
   hsl(69deg 33% 96%) 100%
 );
 }
-h3{
+.stages-of-work-text {
   text-align: center;
   margin-left: 50%;
   margin-right: 50%;
   margin-top: 50px;
-  font-weight: 400;
   color: #7B7367;
   white-space: nowrap;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-.blocks-stages{
+.stages-of-work-blocks {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,7 +293,7 @@ h3{
   font-size: 24px;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-.stgblock{
+.stgblock {
   width: 350px;
   height: 400px;
   background-color: #C9C0B3;
@@ -316,16 +305,16 @@ h3{
   color: #F7F8F1;
   box-shadow: 0 0 15px 1px rgb(123, 115, 103, 24);
 }
-.blocks-stages img{
+.stages-of-work-blocks img {
   margin-top: 30px;
   width: 100px;
   height: 100px;
 }
-.blocks-stages p{
+.stages-of-work-blocks p {
   margin-top: 40px;
 }
 
-.catalog{
+.catalog {
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -335,17 +324,16 @@ h3{
   background-color: #F7F8F1;
   height: 700px;
 }
-h4{
+.catalog-text {
   text-align: center;
   margin-top: 30px;
   margin-left: 50%;
   margin-right: 50%;
-  font-weight: 400;
   color: #7B7367;
   white-space: nowrap;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-.blocks-catalog{
+.catalog-blocks {
   font-size: 18px;
   overflow-y: hidden;
   overflow-x: scroll;
@@ -357,7 +345,7 @@ h4{
   margin-left: 20px; 
   margin-right: 20px; 
 }
-.ctlblock{
+.ctlblock {
   width: 350px;
   height: 400px;
   background-size: cover;
@@ -378,13 +366,13 @@ h4{
   z-index: 1000000;
   margin-top: -40px;
 }
-.ctlblock:hover{
+.ctlblock:hover {
   transform: scale(1.03);
 }
-.blocks-catalog p{
+.catalog-blocks p{
   margin-top: 15px;
 }
-.blocks-catalog button{
+.catalog-blocks button {
   width: 150px;
   height: 50px;
   margin-top: 10px;
@@ -401,20 +389,20 @@ h4{
   color: #F7F8F1;
   box-shadow: 1px 5px 7px 1px rgba(123, 115, 103, 0.59);
 }
-.blocks-catalog::-webkit-scrollbar {
+.catalog-blocks::-webkit-scrollbar {
   width: 12px;
 }
-.blocks-catalog::-webkit-scrollbar-track {
+.catalog-blocks::-webkit-scrollbar-track {
   background: #C9C0B3;
   border-radius: 10px;
 }
-.blocks-catalog::-webkit-scrollbar-thumb {
+.catalog-blocks::-webkit-scrollbar-thumb {
   background-color: #A89B89;    
   border-radius: 10px;      
   border: 3px solid #C9C0B3;  
 }
 
-.guarantees{
+.guarantees {
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -452,49 +440,47 @@ h4{
   hsl(69deg 33% 96%) 100%
 );
 }
-h5{
+.guarantees-text {
   text-align: center;
   margin-left: 50%;
   margin-right: 50%;
   margin-top: 30px;
-  font-weight: 400;
   color: #7B7367;
   white-space: nowrap;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-.fan-file{
+.guarantees-fan-file {
   width: 450px;
   height: 600px;
   position: absolute;
   right: 0;
   z-index: 1500;
 }
-.file-one{
+.file-one {
   transform: rotate(-59deg);
   position: absolute;
   margin-left: 80px;
   margin-top: 300px;
 }
-.file-two{
+.file-two {
   transform: rotate(-40deg);
   position: absolute;
   margin-left: 80px;
   margin-top: 200px;
 }
-.file-three{
+.file-three {
   transform: rotate(-45deg);
   position: absolute;
   margin-left: 80px;
   margin-top: 100px;
 }
-
-.file-four{
+.file-four {
   transform: rotate(-23deg);
   position: absolute;
   margin-left: 80px;
   margin-top: 30px;
 }
-.block-guarantees{
+.guarantees-block {
   margin-left: 40px;
   margin-right: auto;
   margin-top: 30px;
@@ -506,13 +492,14 @@ h5{
   font-family: 'Montserrat Alternates', sans-serif;
   margin-bottom: 40px;
 }
-.block-guarantees img{
+.guarantees-block img {
   margin-top: 60px;
 }
-.block-guarantees p{
+.guarantees-block p {
   margin-top: 40px;
+  padding: 0 10px;
 }
-.calblock{
+.calblock {
   width: 500px;
   height: 600px;
   font-family: 'Montserrat Alternates', sans-serif;  
@@ -522,7 +509,7 @@ h5{
   text-align: center;
   flex-direction: column;
 }
-.warblock{
+.warblock {
   width: 500px;
   height: 600px;
   background-color: #91ABA2;
@@ -547,7 +534,7 @@ h5{
   height: 40px;
 }
 
-.footer{
+.footer {
   margin-left: auto;
   margin-right: auto;
   color: #F7F8F1;
@@ -557,24 +544,21 @@ h5{
   background-color: #7B7367;
   font-family: 'Montserrat Alternates', sans-serif;  
 }
-h6{
-  font-weight: 400;
-  margin-left: 50%;
-  margin-right: 50%;
-  white-space: nowrap;
-  color: #F7F8F1;
-  font-family: 'Montserrat Alternates', sans-serif;  
+.footer-text {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  white-space: nowrap;
+  color: #F7F8F1;
+  font-family: 'Montserrat Alternates', sans-serif;  
 }
-.button-collection{
+.button-collection {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
 }
-.but-check-in{
+.but-check-in {
   display: flex;
   justify-content: center;
   background: none;
@@ -585,7 +569,7 @@ h6{
   border-radius: 10px;
   cursor: pointer;
 }
-.but-check-out{
+.but-check-out {
   display: flex;
   justify-content: center;
   background: none;
@@ -596,7 +580,7 @@ h6{
   border-radius: 10px;
   cursor: pointer;
 }
-.mailto{
+.mailto {
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -604,13 +588,10 @@ h6{
   color: #F7F8F1;
   font-size: 30px;
 }
-.mailto img{
+.mailto img {
   width: 40px;
   height: 40px;
 }
-
-/* all and (min-width: 640px) and (max-width: 734px) */
-
 @media only screen and (max-width: 1800px) {
   .nav-logo p {
     font-size: 42px;
@@ -618,7 +599,7 @@ h6{
   .nav-menu li {
     font-size: 17px;
   }
-  .nav-button .btn{
+  .nav-button .btn { 
     width: 130px;
     height: 40px;
     font-size: 20px;  
@@ -626,7 +607,11 @@ h6{
   body {
     overflow-x: hidden;
   }
-  .main {
+  h2, h3 {
+    font-size: 48px;
+    margin: 20px auto;
+  }
+  .main-window {
     height: 1080px;
   }
   .guarantees {
@@ -646,71 +631,57 @@ h6{
     margin-top: 250px;
     margin-left: 150px;
   }
-  .img-title-page img {
+  .main-window-title img {
     width: 500px;
     height: 700px;
     margin-top: -30px;
     margin-left: auto;
     margin-right: auto;
   }
-  h2, h3, h4, h5, h6 {
-    font-size: 48px;
-    margin-left: 50%;
-    margin-right: 50%;
-  }
-  h2 {
+  .work-text {
     margin-top: 30px;
   }
-  .fan-title img{
+  .work-fan-title img {
     width: 330px;
     height: 510px;
   }
-  .title-one{
+  .title-one {
     margin-left: -100px;
     margin-top: 270px;
   }
-  .title-two{
+  .title-two {
     margin-left: 10px;
     margin-top: 220px;
   }
-  .title-three{
+  .title-three {
     margin-left: 30px;
     margin-top: 90px;
   }
-  .title-four{
+  .title-four {
     margin-left: 10px;
     margin-top: 10px;
   }
-  .title-five{
+  .title-five {
     margin-left: -100px;
     margin-top: -30px;
   }
-  .blok-work {
+  .work-block {
     margin-left: auto;
     margin-right: 20px;
     margin-top: -70px;
     font-size: 22px;
   }
-  .blok-work img{
+  .work-block img {
     width: 70px;
     height: 70px;
     margin-top: 40px;
   }
-  .blok-work p{
+  .work-block p {
     margin-top: 40px;
   }
-  .lab, .diploma{
+  .work-block-lab, .work-block-diploma {
     width: 350px;
     height: 450px;
-  }
-  .blocks-stages {
-    margin-top: -130px;
-  }
-  .stages-of-work {
-    margin-top: 30px;
-  }
-  h3 {
-    margin-top: 30px;
   }
   .stgblock {
     width: 250px;
@@ -721,10 +692,10 @@ h6{
     width: 70px;
     height: 70px;
   }
-  .blocks-catalog {
+  .catalog-blocks {
     margin-top: -180px;
   }
-  .ctlblock{
+  .ctlblock {
     width: 250px;
     height: 300px;
     margin: 200px 20px 20px 0;
@@ -740,27 +711,27 @@ h6{
     height: 30px;
     font-size: 14px;
   }
-  .fan-file{
+  .fan-file {
     width: 330px;
     height: 510px;
   }
-  .file-one{
+  .file-one {
     margin-left: 70px;
     margin-top: 300px;
   }
-  .file-two{
+  .file-two {
     margin-left: 70px;
     margin-top: 200px;
   }
-  .file-three{
+  .file-three {
     margin-left: 90px;
     margin-top: 100px;
   }
-  .file-four{
+  .file-four {
     margin-left: 150px;
     margin-top: 30px;
   }
-  .block-guarantees{
+  .guarantees-block {
     margin-top: -30px;
     margin-left: 30px;
     margin-right: auto;
@@ -770,7 +741,7 @@ h6{
     width: 350px;
     height: 450px;
   }
-  .block-guarantees img {
+  .guarantees-block img {
     width: 70px;
     height: 70px;
     margin-top: 40px;
@@ -791,12 +762,11 @@ h6{
   .mailto {
     font-size: 30px;
   }
-  .mailto img{
+  .mailto img {
     width: 40px;
     height: 40px;
   }
 }
-
 @media only screen and (max-width: 1400px) {
   .nav-logo p {
     font-size: 42px;
@@ -812,7 +782,7 @@ h6{
   body {
     overflow-x: hidden;
   }
-  .main {
+  .main-window {
     height: 100%;
   }
   .guarantees {
@@ -832,24 +802,20 @@ h6{
     margin-top: 250px;
     margin-left: 90px;
   }
-  .img-title-page img {
+  .main-window-title img {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
-  h2, h3, h4, h5, h6 {
+  /* h2, h3{
     font-size: 48px;
-    margin-left: 50%;
-    margin-right: 50%;
-  }
-  h2 {
-    margin-top: 30px;
-  }
-  .fan-title img{
+    margin: 20px auto;
+  } */
+  .work-fan-title img{
     width: 330px;
     height: 510px;
   }
-  .title-one{
+  .title-one {
     margin-left: -100px;
     margin-top: 270px;
   }
@@ -857,44 +823,38 @@ h6{
     margin-left: 10px;
     margin-top: 220px;
   }
-  .title-three{
+  .title-three {
     margin-left: 30px;
     margin-top: 90px;
   }
-  .title-four{
+  .title-four {
     margin-left: 10px;
     margin-top: 10px;
   }
-  .title-five{
+  .title-five {
     margin-left: -100px;
     margin-top: -30px;
   }
-  .blok-work {
+  .work-blok {
     margin-left: auto;
     margin-right: 20px;
     margin-top: -70px;
     font-size: 22px;
   }
-  .blok-work img{
+  .work-blok img {
     width: 70px;
     height: 70px;
     margin-top: 40px;
   }
-  .blok-work p{
+  .work-blok p {
     margin-top: 40px;
   }
-  .lab, .diploma{
+  .work-blok-lab, .work-blok-diploma {
     width: 350px;
     height: 450px;
   }
-  .blocks-stages {
+  .stages-of-work-blocks {
     margin-top: -130px;
-  }
-  .stages-of-work {
-    margin-top: 30px;
-  }
-  h3 {
-    margin-top: 30px;
   }
   .stgblock {
     width: 250px;
@@ -905,10 +865,10 @@ h6{
     width: 70px;
     height: 70px;
   }
-  .blocks-catalog {
+  .catalog-blocks {
     margin-top: -180px;
   }
-  .ctlblock{
+  .ctlblock {
     width: 250px;
     height: 300px;
     margin: 200px 20px 20px 0;
@@ -924,27 +884,27 @@ h6{
     height: 30px;
     font-size: 14px;
   }
-  .fan-file{
+  .guarantees-fan-file {
     width: 330px;
     height: 510px;
   }
-  .file-one{
+  .file-one {
     margin-left: 70px;
     margin-top: 300px;
   }
-  .file-two{
+  .file-two {
     margin-left: 70px;
     margin-top: 200px;
   }
-  .file-three{
+  .file-three {
     margin-left: 90px;
     margin-top: 100px;
   }
-  .file-four{
+  .file-four {
     margin-left: 150px;
     margin-top: 30px;
   }
-  .block-guarantees{
+  .guarantees-block {
     margin-top: -30px;
     margin-left: 30px;
     margin-right: auto;
@@ -954,7 +914,7 @@ h6{
     width: 350px;
     height: 450px;
   }
-  .block-guarantees img {
+  .guarantees-block img {
     width: 70px;
     height: 70px;
     margin-top: 40px;
@@ -975,20 +935,19 @@ h6{
   .mailto {
     font-size: 30px;
   }
-  .mailto img{
+  .mailto img {
     width: 40px;
     height: 40px;
   }
 }
-
 @media only screen and (max-width: 1260px) {
-  .nav-button{
+  .nav-button {
     display: none;
   }
-  .nav-menu.responsive{
+  .nav-menu.responsive {
     top: 100px;
   }
-  .nav-menu{
+  .nav-menu {
     position: absolute;
     top: -1500px;
     display: flex;
@@ -999,15 +958,15 @@ h6{
     backdrop-filter: blur(900px);
     transition: .3s;
   }
-  .nav-menu ul{
+  .nav-menu ul {
     flex-direction: column;
     text-align: center;
     font-size: 34px;
   }
-  .nav-menu-btn{
+  .nav-menu-btn {
     display: block;
   }
-  .nav-menu-btn i{
+  .nav-menu-btn i {
     font-size: 25px;
     color: #F7F8F1;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -1017,7 +976,7 @@ h6{
     cursor: pointer;
     transition: .3s;
   }
-  .nav-menu-btn i:hover{
+  .nav-menu-btn i:hover {
     background: rgba(145, 171, 162, 0.83);
   }
   .nav-logo p {
@@ -1030,7 +989,7 @@ h6{
     height: 750px;
   }
   .stages-of-work {
-    height: 400px;
+    height: 450px;
   }
   .work {
     height: 500px;
@@ -1038,7 +997,7 @@ h6{
   .catalog {
     height: 450px;
   }
-  .text-main{
+  .main-window-text {
     font-size: 150px;
   }
   .right {
@@ -1054,59 +1013,55 @@ h6{
   .keyboard {
     margin-left: 50px;
   }
-  .img-title-page img {
+  .main-window-title img {
     margin-left: auto;
     margin-right: auto;
     margin-top: -30px;
     width: 450px;
     height: 620px;
   }
-  h2, h3, h4, h5, h6 {
+  h2, h3 {
     font-size: 40px;
+    margin: 10px auto;
   }
-  h2 {
-    margin-left: 50%;
-    margin-right: 50%;
-    margin-top: 30px;
-  }
-  .blok-work {
+  .work-block {
     font-size: 20px;
     margin-top: -30px;
     font-size: 18px;
   }
-  .blok-work p {
+  .work-block p {
     margin-top: 20px;
   }
-  .blok-work img{
+  .work-block img {
     width: 60px;
     height: 60px;
     margin-top: 30px;
   }
-  .fan-title img {
+  .work-fan-title img {
     width: 230px;
     height: 320px;
   }
-  .title-one{
+  .title-one {
     margin-top: 250px;
     margin-left: -90px;
   }
-  .title-two{
+  .title-two {
     margin-left: -10px;
     margin-top: 190px;
   }
-  .title-three{
+  .title-three {
     margin-left: 30px;
     margin-top: 90px;
   }
-  .title-four{
+  .title-four {
     margin-left: -10px;
     margin-top: 30px;
   }
-  .title-five{
+  .title-five {
     margin-left: -80px;
     margin-top: -10px;
   }
-  .lab, .diploma {
+  .work-block-lab, .work-block-diploma {
     width: 280px;
     height: 350px;
     margin-left: 10px;
@@ -1117,15 +1072,12 @@ h6{
     margin: -120px 20px 20px 0;
     font-size: 20px;
   }
-  .blocks-stages {
+  .stages-of-work-blocks {
     margin-top: 30px;
   }
   .stgblock img {
     width: 60px;
     height: 60px;
-  }
-  h4 {
-    margin-top: 20px;
   }
   .ctlblock {
     width: 200px;
@@ -1134,21 +1086,18 @@ h6{
     font-size: 14px;
     margin-top: 240px;
   }
-  .blocks-catalog button {
+  .catalog-blocks button {
     width: 70px;
     height: 30px;
     font-size: 12px;
     margin-top: 10px;
   }
-  .blocks-catalog img {
-    width: 70px;
-    height: 90px;
+  .catalog-blocks img {
+    width: 80px;
+    height: 95px;
   }
-  .blocks-catalog p{
+  .catalog-blocks p { 
     margin-top: 10px;
-  }
-  h5 {
-    margin-top: 20px;
   }
   .fan-file img {
     width: 260px;
@@ -1157,7 +1106,7 @@ h6{
   .guarantees {
     height: 600px;
   }
-  .block-guarantees {
+  .guarantees-block {
     font-size: 18px;
     margin-top: -80px;
   }
@@ -1169,41 +1118,40 @@ h6{
     width: 300px;
     height: 350px;
   }
-  .block-guarantees img{
+  .guarantees-block img {
     margin-top: 20px;
     width: 60px;
     height: 60px;
   }
-  .block-guarantees p{
+  .guarantees-block p {
     margin-top: 20px;
   }
-  .file-one{
+  .file-one {
     margin-top: 260px;
     margin-left: 160px;
   }
-  .file-two{
+  .file-two {
     margin-top: 160px;
     margin-left: 160px;
   }
-  .file-three{
+  .file-three {
     margin-top: 60px;
     margin-left: 190px;
   }
-  .file-four{
+  .file-four {
     margin-top: 5px;
     margin-left: 270px;
   }
   .footer {
     font-size: 26px;
   }
-  .mailto img{
+  .mailto img {
     width: 30px;
     height: 30px;
   }
 }
-
 @media only screen and (max-width: 980px) {
-  .main {
+  .main-window {
     height: 100%;
   }
   .work, .stages-of-work {
@@ -1216,7 +1164,7 @@ h6{
     overflow-x: hidden;
     width: 100%;
   }
-  .text-main {
+  .main-window-text {
     font-size: 130px;
     text-overflow: clip;
   }
@@ -1227,73 +1175,67 @@ h6{
     margin-top: 210px;
   }
   .mouse {
-    margin-left: 200px;
+    margin-left: 300px;
   }
   .keyboard {
-    margin-top: 470px;
-    margin-left: -100px;
+    margin-top: 250px;
+    margin-left: 100px;
     width: 450px;
   }
-  h2 {
+  h2, h3 {
     font-size: 34px;
-    margin-top: 30px;
-    text-align: center;
-    white-space: normal;
-  }
-  .blok-work {
+    margin: 5px auto;
+  } 
+  .work-block {
     font-size: 16px;
     margin-top: -200px;
     display: inline-block;
   }
-  .blok-work p {
+  .work-block p {
     margin-top: 5px;
   }
-  .blok-work img{
+  .work-block img {
     width: 50px;
     height: 50px;
     margin-top: 20px;
   }
-  .fan-title img {
+  .work-fan-title img {
     width: 220px;
     height: 300px;
   }
-  .lab {
+  .work-block-lab {
     width: 230px;
     height: 200px;
     margin-right: 70px;
   }
-  .diploma {
-    position: absolute;
+  .work-block-diploma {
     width: 230px;
     height: 200px;
     margin-top: 20px;
     margin-right: 5px;
     margin-left: 10px;
   }
-  .title-one{
+  .title-one {
     margin-top: 340px;
     margin-left: -100px;
   }
-  .title-two{
+  .title-two {
     margin-left: -40px;
     margin-top: 260px;
   }
-  .title-three{
+  .title-three {
     margin-left: -5px;
     margin-top: 170px;
   }
-  .title-four{
+  .title-four {
     margin-left: -40px;
     margin-top: 45px;
   }
-  .title-five{
+  .title-five {
     margin-left: -100px;
     margin-top: -10px;
   }
-  h3 {
-    font-size: 34px;
-  }
-  .blocks-stages {
+  .stages-of-work-blocks {
     margin-top: 20px;
   }
   .stgblock {
@@ -1309,11 +1251,7 @@ h6{
   .stgblock p {
     margin-top: 10px;
   }
-  h4 {
-    font-size: 34px;
-    margin-top: 20px;
-  }
-  .blocks-catalog {
+  .catalog-blocks {
     margin-top: -10px;
   }
   .ctlblock {
@@ -1327,13 +1265,6 @@ h6{
   }
   .blocks-catalog p{
     margin-top: 10px;
-  }
-  h5 {
-    font-size: 34px;
-    margin-top: 20px;
-    white-space: pre-line;
-    margin-left: 20px;
-    text-align: left;
   }
   .fan-file img {
     width: 300px;
@@ -1358,21 +1289,21 @@ h6{
     margin-top: 30px;
     margin-left: -5px;
   }
-  .block-guarantees img{
+  .guarantees-block img {
     margin-top: 10px;
     width: 70px;
     height: 70px;
   }
-  .block-guarantees p{
+  .guarantees-block p {
     margin-top: 10px;
   }
-  .file-one{
+  .file-one {
     margin-top: 300px;
   }
-  .file-two{
+  .file-two {
     margin-top: 200px;
   }
-  .file-three{
+  .file-three {
     margin-top: 100px;
   }
   .button-collection {
@@ -1382,8 +1313,6 @@ h6{
     font-size: 24px;
   }
 }
-
-
 .fixed{
   position: fixed;
   width: 100%;
