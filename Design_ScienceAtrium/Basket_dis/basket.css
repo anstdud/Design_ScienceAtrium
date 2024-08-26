@@ -1,14 +1,11 @@
 .container {
-  display: flex;
+  /* display: flex; */
   margin: 0 auto; 
 }
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   padding: 0;
   margin: 0;
+  font-weight: 400;
 }
 * {
   box-sizing: border-box;
@@ -23,10 +20,9 @@ body {
   background-size: 100%;
   height: 870px;
   background-repeat: no-repeat;
-  background-color: #F7F8F1;
 }
 
-.nav{
+.nav {
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -36,63 +32,60 @@ body {
   background: linear-gradient(rgba(39, 39, 39, 0.67), transparent);
   z-index: 50000;
   position: absolute;
+  top: 0;
 }
-.nav-logo p{
-  color: #F7F8F1;
-  font-family: 'Montserrat Alternates', sans-serif; 
+.nav-logo p {
   font-size: 56px;
   font-weight: 600;
   margin-top: 10px;
   margin-left: 30px;
 }
-.nav-menu ul{
+.nav-menu ul {
   display: flex;
   margin-top: 10px;
   font-size: 28px;
-  color: #F7F8F1;
-  font-family: 'Montserrat Alternates', sans-serif; 
 }
-.nav-menu ul li{
+.nav-menu ul li {
   list-style-type: none;
 }
-.nav-menu ul li .link{
+.nav-menu ul li .link {
   text-decoration: none;
   font-weight: 500;
-  color: #F7F8F1;
-  font-family: 'Montserrat Alternates', sans-serif;
   padding-bottom: 15px;
   margin: 0 25px;
+  color: #F7F8F1;
 }
-.link:hover, .active{
+.link:hover, .active {
   border-bottom: 2px solid #F7F8F1;
 }
-.nav-button .btn{
+.nav-button .btn {
   width: 145px;
   height: 45px;
   font-size: 24px;
-  color: #F7F8F1;
   font-weight: 300;
+  color: #F7F8F1;
   background: rgba(247, 248, 241, 0.4);
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: .3s ease;
 }
-.btn:hover{
+.btn:hover {
   background: rgba(247, 248, 241, 0.3);
 }
-.nav-menu-btn{
+.nav-menu-btn {
   display: none;
 }
 
-h1 {
+.block {
+  display: flex;
+  flex-direction: row;
+}
+.col-one-text {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 5px;
-  color: #F7F8F1;
   font-size: 36px;
-  font-weight: 400;
-  font-family: 'Montserrat Alternates', sans-serif;  
 }
 .col-one {
   width: 900px;
@@ -102,9 +95,8 @@ h1 {
   margin-left: 30px;
   box-shadow: 0 0 15px 2px rgb(123, 115, 103, 24);
   border-radius: 10px;
-  font-family: 'Montserrat Alternates', sans-serif;  
 }
-.catalog-block{
+.catalog-block {
   width: 880px;
   height: 700px;
   font-size: 20px;
@@ -113,10 +105,8 @@ h1 {
   justify-content: space-between;
   overflow-y: scroll;
   word-break: break-all;
-  color: #F7F8F1;
-  font-family: 'Montserrat Alternates', sans-serif;  
 }
-.ctlgblock{
+.ctlgblock {
   width: 290px;
   height: 350px;
   background-size: cover;
@@ -127,7 +117,7 @@ h1 {
   box-shadow: 0 0 15px 1px rgb(123, 115, 103, 24);
   transform: scale(1);
 }
-.btn-shop{
+.btn-shop {
   width: 120px;
   height: 40px;
   font-size: 15px;
@@ -138,20 +128,18 @@ h1 {
   border: none;
   overflow: hidden;
   cursor: pointer;
-  font-family: 'Montserrat Alternates', sans-serif;  
 }
 .btn-shop:hover {
   background-color: rgba(183, 181, 181, 0.44);
-  color: #F7F8F1;
   box-shadow: 1px 5px 7px 1px rgba(123, 115, 103, 0.59);
 }
-.ctlgblock:hover{
+.ctlgblock:hover {
   transform: scale(1.03);
 }
-.catalog-block img{
+.catalog-block img {
   margin-top: 10px;
 }
-.catalog-block p{
+.catalog-block p {
   margin-top: 20px;
 }
 .catalog-block::-webkit-scrollbar {
@@ -167,14 +155,12 @@ h1 {
   border: 3px solid #C9C0B3;  
 }
 
-h2 {
+.col-two-text {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 5px;
-  color: #F7F8F1;
   font-size: 36px;
   font-weight: 400;
-  font-family: 'Montserrat Alternates', sans-serif;  
 }
 .col-two {
   width: 650px;
@@ -185,8 +171,6 @@ h2 {
   margin-right: 30px;
   box-shadow: 0 0 15px 2px rgb(123, 115, 103, 24);
   border-radius: 10px;
-  color: #F7F8F1;
-  font-family: 'Montserrat Alternates', sans-serif;
 }
 .col-two span {
   font-size: 26px;
@@ -194,7 +178,6 @@ h2 {
   margin-left: 30px;
   display: flex;
   text-align: left;
-  font-family: 'Montserrat Alternates', sans-serif;
 }
 .col-two input {
   width: 150px;
@@ -207,14 +190,11 @@ h2 {
   color: #7B7367;
   border-radius: 10px;
   border-style: none;
-  font-family: 'Montserrat Alternates', sans-serif;
 }
 .col-two .name-sub {
   margin-top: 30px;
 }
 .col-two .price {
-  color: #F7F8F1;
-  font-family: 'Montserrat Alternates', sans-serif;  
   float: left;
   margin-left: 20px;
   margin-top: 55%;
@@ -230,7 +210,6 @@ h2 {
   bottom: 0;
   margin-top: 55%;
   margin-bottom: 45%;
-  font-family: 'Montserrat Alternates', sans-serif;  
 }
 .col-two .delete-btn {
   width: 120px;
@@ -240,7 +219,7 @@ h2 {
   margin-right: 10px;
 }
 
-.footer{
+.footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 140px;
@@ -248,24 +227,19 @@ h2 {
   height: 150px;
   font-size: 30px;
   background-color: #7B7367;
-  color: #F7F8F1;
-  font-family: 'Montserrat Alternates', sans-serif;
 }
-h3{
+h3 {
   text-align: center;
   font-weight: 400;
   font-size: 48px;
   white-space: nowrap;
-  color: #F7F8F1;
-  font-family: 'Montserrat Alternates', sans-serif;  
 }
-.mailto{
+.mailto {
   display: flex;
   justify-content: center;
   margin-top: 30px;
   text-decoration: none;
   color: #F7F8F1;
-  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 @media only screen and (max-width: 1800px) {
@@ -275,12 +249,12 @@ h3{
   .nav-menu li {
     font-size: 20px;
   }
-  .nav-button .btn{
+  .nav-button .btn {
     width: 130px;
     height: 40px;
     font-size: 20px;  
   }
-  h1 {
+  .col-one-text, .col-two-text {
     font-size: 30px;
   }
   .col-one {
@@ -304,13 +278,10 @@ h3{
     width: 110px;
     height: 130px;
   }
-  .btn-shop{
+  .btn-shop {
     width: 100px;
     height: 30px;
     margin-top: -15px;
-  }
-  h2 {
-    font-size: 30px;
   }
   .col-two {
     width: 450px;
@@ -338,9 +309,6 @@ h3{
     width: 100px;
     height: 30px;
     font-size: 12px;
-    /* margin-left: 10px;
-    margin-top: -2px;
-    margin-right: 10px; */
   }
   .footer{
     font-size: 24px;
@@ -363,7 +331,7 @@ h3{
     height: 40px;
     font-size: 20px;  
   }
-  h1 {
+  .col-one-text, .col-two-text {
     font-size: 30px;
   }
   .col-one {
@@ -393,9 +361,6 @@ h3{
     height: 30px;
     margin-top: -15px;
     font-size: 14px;
-  }
-  h2 {
-    font-size: 30px;
   }
   .col-two {
     width: 450px;
@@ -435,13 +400,13 @@ h3{
 }
 
 @media only screen and (max-width: 1260px) {
-  .nav-button{
+  .nav-button {
     display: none;
   }
-  .nav-menu.responsive{
+  .nav-menu.responsive {
     top: 100px;
   }
-  .nav-menu{
+  .nav-menu {
     position: absolute;
     top: -1500px;
     display: flex;
@@ -452,15 +417,15 @@ h3{
     backdrop-filter: blur(900px);
     transition: .3s;
   }
-  .nav-menu ul{
+  .nav-menu ul {
     flex-direction: column;
     text-align: center;
     font-size: 34px;
   }
-  .nav-menu-btn{
+  .nav-menu-btn {
     display: block;
   }
-  .nav-menu-btn i{
+  .nav-menu-btn i {
     font-size: 25px;
     color: #F7F8F1;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -470,14 +435,14 @@ h3{
     cursor: pointer;
     transition: .3s;
   }
-  .nav-menu-btn i:hover{
+  .nav-menu-btn i:hover {
     background: rgba(145, 171, 162, 0.83);
   }
   body {
     overflow-x: hidden;
   }
-  h1 {
-    font-size: 42px;
+  .col-one-text, .col-two-text {
+    font-size: 24px;
   }
   .col-one {
     width: 500px;
@@ -557,11 +522,11 @@ h3{
   body {
     overflow-x: hidden;
   }
-  h1 {
-    font-size: 30px;
+  .col-one-text, .col-two-text {
+    font-size: 20px;
   }
   .col-one {
-    width: 260px;
+    width: 360px;
     height: 650px;
     margin-left: 20px;
   }
@@ -577,10 +542,9 @@ h3{
     justify-content: center;
     flex-wrap: wrap;
     font-size: 26px;
-    background-color: #F7F8F1;
   }
   .catalog-block{
-    width: 250px;
+    width: 350px;
     height: 570px;
     font-size: 18px;
   }
@@ -602,14 +566,10 @@ h3{
     margin-top: -3px;
   }
   .col-two {
-    width: 260px;
+    width: 360px;
     height: 650px;
-    margin-left: 10px;
+    margin-left: auto;
     margin-right: 20px;
-  }
-  h2 {
-    font-size: 30px;
-    word-break: break-all;
   }
   .col-two .name-sub {
     font-size: 13px;
@@ -644,7 +604,6 @@ h3{
   }
   h3{
     text-align: center;
-    font-weight: 400;
     font-size: 34px;
   }
   .mailto img {
@@ -652,14 +611,3 @@ h3{
     width: 29px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
