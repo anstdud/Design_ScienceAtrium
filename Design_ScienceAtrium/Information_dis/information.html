@@ -12,10 +12,8 @@
     </head>
 <body>
     <header id="header" class="header">
-
 		<div class="container">
-
-			<nav class="nav">
+			<nav class="nav" aria-label="Main">
 				<div class="nav-logo">
 					<p>ScienceAtrium</p>
 				</div>
@@ -34,73 +32,67 @@
 					<i class="bx bx-menu" onclick="myMenuFunction()"></i>
 				</div>
 			</nav>
-			
 		</div>
-			
 	</header>
-
-    <section id="form-box" class="form-box">
-        <div class="container">
-
-            <div class="inform-container" id="inform">
-                <div class="top">
-                    <h1>Мои данные</h1>
+    <main>
+        <div class=" container">
+            <section id="form-box" class="form-box">
+                <div class="container">
+                    <div class="inform-container" id="inform">
+                        <div class="top inform-text">
+                            <h1>Мои данные</h1>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="input-field" placeholder="Имя пользователя">
+                            <i class="bx bx-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="input-field" placeholder="Электорнная почта">
+                            <i class="bx bx-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field" placeholder="Ник в Telegram/id в VK">
+                            <i class="bx bx-lock-alt"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit" value="Сохранить">
+                        </div>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Имя пользователя">
-                    <i class="bx bx-user"></i>
-                </div>
-                <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Электорнная почта">
-                    <i class="bx bx-user"></i>
-                </div>
-                <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Ник в Telegram/id в VK">
-                    <i class="bx bx-lock-alt"></i>
-                </div>
-                <div class="input-box">
-                    <input type="submit" class="submit" value="Сохранить">
-                </div>
-                
-            </div>
-
+            </section>
         </div>
-
-    </section>
-   
+    </main>
     <script>
-   
         function myMenuFunction() {
-         var i = document.getElementById("navMenu");
-         if(i.className === "nav-menu") {
-             i.className += " responsive";
-         } else {
-             i.className = "nav-menu";
-         }
+            var i = document.getElementById("navMenu");
+            if(i.className === "nav-menu") {
+                i.className += " responsive";
+            } else {
+                i.className = "nav-menu";
+            }
         }
-      
-     </script>
-     <script>
-         var a = document.getElementById("loginBtn");
-         var b = document.getElementById("registerBtn");
-         var x = document.getElementById("login");
-         var y = document.getElementById("register");
-         function login() {
-             x.style.left = "4px";
-             y.style.right = "-520px";
-             a.className += " white-btn";
-             b.className = "btn";
-             x.style.opacity = 1;
-             y.style.opacity = 0;
-         }
-         function register() {
-             x.style.left = "-510px";
-             y.style.right = "5px";
-             a.className = "btn";
-             b.className += " white-btn";
-             x.style.opacity = 0;
-             y.style.opacity = 1;
-         }
-     </script>
+    </script>
+    <script>
+        var a = document.getElementById("loginBtn");
+        var b = document.getElementById("registerBtn");
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        function login() {
+            x.style.left = "4px";
+            y.style.right = "-520px";
+            a.className += " white-btn";
+            b.className = "btn";
+            x.style.opacity = 1;
+            y.style.opacity = 0;
+        }
+        function register() {
+            x.style.left = "-510px";
+            y.style.right = "5px";
+            a.className = "btn";
+            b.className += " white-btn";
+            x.style.opacity = 0;
+            y.style.opacity = 1;
+        }
+    </script>
 </body>
 </html>
