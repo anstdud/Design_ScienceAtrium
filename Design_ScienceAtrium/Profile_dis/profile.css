@@ -1,5 +1,4 @@
 .container {
-  display: flex;
   margin: 0 auto; 
 }
 h2,
@@ -205,6 +204,7 @@ h3 {
   border-radius: 10px;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 0 15px 1px rgb(123, 115, 103, 24);
 }
 .ordblock p {
   margin-top: 30px;

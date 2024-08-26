@@ -1,7 +1,7 @@
 if (document.documentElement.clientWidth > 539) {
 
   document.addEventListener('DOMContentLoaded', () => {
-    const main = document.querySelector('.main');
+    const main = document.querySelector('.cards');
     const header = document.querySelector('.header');
   
   const headerFixed = () => {
