@@ -19,7 +19,8 @@
 - JavaScript
 
 ## Структура проекта
-```ScienceAtrium 
+```
+ScienceAtrium /
 ├── /assets 
 │ 
 ├── /css 
