@@ -19,7 +19,7 @@
 - JavaScript
 
 ## Структура проекта
-ScienceAtrium \
+```ScienceAtrium \
 ├── /assets \
 │ 
 ├── /css \ 
@@ -41,7 +41,7 @@ ScienceAtrium \
 └── custom-font.ttf # Шрифты, используемые в проекте \
 ├── index.html # Главная страница сайта \
 ├── README.md # Файл описания проекта \
-└── LICENSE # Лицензионное соглашение
+└── LICENSE # Лицензионное соглашение```
 
 ## Функциональность проекта ScienceAtrium
 
