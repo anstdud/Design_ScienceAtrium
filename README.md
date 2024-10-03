@@ -19,10 +19,10 @@
 - JavaScript
 
 ## Структура проекта
-/ScienceAtrium
-├── /assets 
-│ 
-├── /css 
+ScienceAtrium/ \
+├── /assets \
+│ \
+├── /css \ 
 │ 
 │ 
 └── style.css # Основные стили проекта 
